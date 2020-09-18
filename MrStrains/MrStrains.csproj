@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <NoWarn>NU1701</NoWarn>
+    <UserSecretsId>8e88304c-a69a-429d-a416-d1ef6355a5fd</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/c735e742-dc25-4581-8d73-f52f5c82c638/resourceGroups/MrStrains/providers/microsoft.insights/components/MrStrainsbs72dz</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -11,9 +13,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.0.0" />
+    <PackageReference Include="Azure.Identity" Version="1.1.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.3.0" />
+    <PackageReference Include="Azure.Storage.Files.Shares" Version="12.1.0" />
+    <PackageReference Include="Azure.Storage.Queues" Version="12.2.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.14.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <PackageReference Include="Microsoft.Azure.CognitiveServices.ContentModerator" Version="2.0.0" />
     <PackageReference Include="Microsoft.Azure.CognitiveServices.Language" Version="1.0.1-preview" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.6.0" />
     <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.9.3" />
     <PackageReference Include="Microsoft.Bot.Builder.AI.QnA" Version="4.9.3" />
     <PackageReference Include="Microsoft.Bot.Builder.ApplicationInsights" Version="4.9.3" />
@@ -22,6 +31,7 @@
     <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.9.3" />
     <PackageReference Include="Microsoft.Bot.Builder.LanguageGeneration" Version="4.9.3" />
     <PackageReference Include="Microsoft.Bot.Solutions" Version="1.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Azure" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
